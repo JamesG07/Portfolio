@@ -105,6 +105,10 @@ section {
     visibility: hidden;
 }
 
+.oculto {
+    display: none;
+}
+
 .button {
     text-transform: uppercase;
     color: var(--white-color);
@@ -130,7 +134,7 @@ section {
 .head__mobile h4 {
     font-size: 1.6rem;
     text-transform: uppercase;
-    color: var(--first-color);
+    color: var(--white-color);
 }
 
 .menu {
@@ -184,6 +188,7 @@ section {
 
 
 
+
 /* header  */
 
 
@@ -227,6 +232,7 @@ section {
 }
 
 
+
 /* section 1  */
 
 
@@ -254,9 +260,13 @@ section {
 }
 
 .section__inicio__description h1 {
-
     font-size: clamp(3rem, 10vw, 11rem);
     font-weight: bolder;
     color: var(--white-color);
     text-align: center;
 }
+
+
+/* @media */
+
+@media screen {}
