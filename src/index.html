@@ -15,15 +15,17 @@
     <link
       rel="stylesheet"
       href="stylesheet/mediaQ.css"
-      media="(min-width: 900px)"
+      media="(min-width: 1000px)"
     />
     <title>Portafolio</title>
   </head>
   <body>
     <header class="header">
-      <div class="head__mobile">
-        <a href="#inicio"><h4>Jhon james</h4> </a>
-        <button class="menu menu-burger" aria-label="Main Menu">
+      <section class="container">
+        <div class="log">
+          <a href="index.html"> Jhon James </a>
+        </div>
+        <button class="menu-btn" aria-label="Main Menu">
           <svg width="50" height="50" viewBox="0 0 100 100">
             <path
               class="line line1"
@@ -36,43 +38,68 @@
             />
           </svg>
         </button>
-      </div>
-
-      <div class="header__desktop oculto">
-        <ul>
-          <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#acerca">Acerca</a></li>
-          <li><a href="#servicios">Servicios</a></li>
-          <li><a href="#portafolio">Portafolio</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-        </ul>
-      </div>
-      <ul class="header__ul hiden">
-        <a href="#inicio">Inicio</a>
-        <a href="#acerca">Acerca</a>
-        <a href="#servicios">Servicios</a>
-        <a href="#portafolio">Portafolio</a>
-        <a href="#contacto">Contacto</a>
-      </ul>
-    </header>
-    <main>
-      <section class="section__inicio" id="inicio">
-        <div class="section__inicio__img">
-          <div class="section__inicio__description">
-            <h1>
-              Bienvenidos <br />
-              a mi sitio
-            </h1>
-            <a href="#contacto" class="button">contáctame</a>
-          </div>
+        <div class="menu__mobile hiden">
+          <a href="#inicio">Inicio</a>
+          <a href="#acerca ">Acerca</a>
+          <a href="#servicios ">Servicios</a>
+          <a href="#portafolio ">Portafolio</a>
+          <a href="#testimonios ">Testimonios</a>
+          <a href="#contacto a">Contacto</a>
         </div>
       </section>
+    </header>
+    <main class="">
+      <section class="home" id="inicio">
+        <article
+          class="hero__image"
+          style="
+            --image: url('/assets/pexels-jeandaniel-francoeur-4006123.jpg');
+            --attachment: fixed;
+          "
+        >
+          <aside class="hero__opacity">
+            <div class="hero__image__content">
+              <h5>
+                Bienvenidos <br />
+                a mi sitio
+              </h5>
+              <a href="#contacto" class="button">contáctame</a>
+            </div>
+          </aside>
+        </article>
+      </section>
 
-      <section id="acerca"></section>
-      <section id="servicios"></section>
-      <section id="portafolio"></section>
-      <section id="contacto"></section>
+      <section class="about" id="acerca">
+        <h2>Acerca</h2>
+      </section>
+
+      <section class="services" id="servicios">
+        <h2>servicios</h2>
+      </section>
+
+      <section class="portfolio" id="portafolio">
+        <h2>Proyectos</h2>
+      </section>
+
+      <section class="testimonials" id="testimonios">
+        <h2>testimonios</h2>
+      </section>
+
+      <section class="contact" id="contacto">
+        <h2>Contacto</h2>
+      </section>
     </main>
+    <footer class="footer hiden">
+      <small
+        >Sitio diseñado por
+        <a
+          href="https://www.linkedin.com/in/jhonjamesbedoya/"
+          target="_blank"
+          rel="noopener"
+          >Jhon James</a
+        ></small
+      >
+    </footer>
     <script src="app.js"></script>
   </body>
 </html>
