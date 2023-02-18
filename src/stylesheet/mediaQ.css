@@ -58,23 +58,29 @@
 }
 
 
-/* .header__desktop {
-    background-color: red;
-    display: flex;
-    justify-content: center;
-    width: 700px;
+/* section 2  */
+
+.about__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 3rem;
 }
 
-.header__desktop ul {
-    width: 100%;
-    display: flex;
+.about__container article h2,
+.about__container article h5 {
+    text-align: right;
+}
+
+.about__container article p {
+
+    text-align: right;
+}
+
+
+/* section 3 portfolio */
+.portfolio__container {
+    grid-template-columns: repeat(3, 1fr);
+
     gap: 1rem;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0;
 }
-
-.header__desktop a {
-    font-size: 1.3rem;
-    color: var(--white-color);
-} */
