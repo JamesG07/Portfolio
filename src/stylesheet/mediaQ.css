@@ -63,6 +63,7 @@
 .about__container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-auto-flow: row;
 
     gap: 3rem;
 }
@@ -80,7 +81,21 @@
 
 /* section 3 portfolio */
 .portfolio__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
-
     gap: 1rem;
+}
+
+.portafolio-modal {
+    flex-direction: row;
+    max-width: 800px;
+    height: auto;
+}
+
+.portafolio-modal img {
+    width: 400px;
+    height: 400px;
+    margin-right: 1rem;
 }

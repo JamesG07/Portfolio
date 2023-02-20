@@ -1,147 +1,346 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="stylesheet/normalize.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="stylesheet/index.css" />
-    <link
-      rel="stylesheet"
-      href="stylesheet/mediaQ.css"
-      media="(min-width: 1000px)"
-    />
-    <title>Portafolio</title>
-  </head>
-  <body>
-    <header class="header">
-      <section class="container">
-        <div class="log">
-          <a href="index.html"> Jhon James </a>
-        </div>
-        <button class="menu-btn" aria-label="Main Menu">
-          <svg width="50" height="50" viewBox="0 0 100 100">
-            <path
-              class="line line1"
-              d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"
-            />
-            <path class="line line2" d="M 20,50 H 80" />
-            <path
-              class="line line3"
-              d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"
-            />
-          </svg>
-        </button>
-        <div class="menu__mobile hiden">
-          <a href="#inicio">Inicio</a>
-          <a href="#acerca ">Acerca</a>
-          <a href="#portafolio ">Portafolio</a>
-          <a href="#testimonios ">Testimonios</a>
-          <a href="#contacto a">Contacto</a>
-        </div>
-      </section>
-    </header>
-    <main class="">
-      <section class="home" id="inicio">
-        <article
-          class="hero__image"
-          style="
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="stylesheet/normalize.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="stylesheet/index.css" />
+  <link rel="stylesheet" href="stylesheet/mediaQ.css" media="(min-width: 1000px)" />
+  <title>Portafolio</title>
+</head>
+
+<body>
+  <header class="header">
+    <section class="container">
+      <div class="log">
+        <a href="index.html"> Jhon James </a>
+      </div>
+      <button class="menu-btn" aria-label="Main Menu">
+        <svg width="50" height="50" viewBox="0 0 100 100">
+          <path class="line line1"
+            d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+          <path class="line line2" d="M 20,50 H 80" />
+          <path class="line line3"
+            d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+        </svg>
+      </button>
+      <div class="menu__mobile hiden">
+        <a href="#inicio">Inicio</a>
+        <a href="#acerca ">Acerca</a>
+        <a href="#portafolio ">Portafolio</a>
+        <a href="#testimonios ">Testimonios</a>
+        <a href="#contacto a">Contacto</a>
+      </div>
+    </section>
+  </header>
+  <main class="">
+    <section class="home" id="inicio">
+      <article class="hero__image" style="
             --image: url('/assets/pexels-jeandaniel-francoeur-4006123.jpg');
             --attachment: fixed;
-          "
-        >
-          <aside class="hero__opacity">
-            <div class="hero__image__content">
-              <h5>
-                Bienvenidos <br />
-                a mi sitio
-              </h5>
-              <a href="#contacto" class="button">contáctame</a>
-            </div>
-          </aside>
+          ">
+        <aside class="hero__opacity">
+          <div class="hero__image__content">
+            <h5>
+              Bienvenidos <br />
+              a mi sitio
+            </h5>
+            <a href="#contacto" class="button">contáctame</a>
+          </div>
+        </aside>
+      </article>
+    </section>
+
+    <section class="about container" id="acerca">
+      <div class="about__container">
+        <article>
+          <h2>James Bedoya</h2>
+          <h5>Desarrollador FrontEnd</h5>
+          <p>
+          <p>
+            Soy una persona enfocada y dedicada,apasionada por lastecnologías de desarrollo web y la programación.
+          </p>
+          <p>
+            Una de las razones por las que me gusta la programación es la
+            facilidad para materializar soluciones existentes en mi
+            imaginación.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+            labore voluptatem, eum vero sequi modi quas illum blanditiis
+            possimus distinctio porro dicta eius nesciunt dignissimos placeat
+            minus id saepe! Corrupti.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quasi
+            cupiditate reprehenderit qui natu
+          </p>
+          </p>
+          <a href="../assets/Jhon_James_Bedoya.pdf" class="button" rel="noopener">descarga mi cv</a>
         </article>
-      </section>
+        <img src="../assets/James.jpg" alt="jhonjamesbedoya" id="photo-james" />
+        <article>
+          <h4>Mis habilidades</h4>
+          <div class="skills">
+            <ul>
+              <li>html</li>
+              <li>css</li>
+              <li>javascript</li>
+              <li>vue.js</li>
+              <li>Bootstrap</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
 
-      <section class="about container" id="acerca">
-        <div class="about__container">
-          <article>
-            <h2>James Bedoya</h2>
-            <h5>Desarrollador FrontEnd</h5>
-            <p> 
-              <p>
-                Soy una persona enfocada y dedicada,apasionada por lastecnologías de desarrollo web y la programación.
-              </p>
-              <p>
-                Una de las razones por las que me gusta la programación es la
-                facilidad para materializar soluciones existentes en mi
-                imaginación.
-              </p> 
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-                labore voluptatem, eum vero sequi modi quas illum blanditiis
-                possimus distinctio porro dicta eius nesciunt dignissimos placeat
-                minus id saepe! Corrupti.
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quasi
-                cupiditate reprehenderit qui natu
-              </p>
-            </p>
-            <a href="../assets/Jhon_James_Bedoya.pdf" class="button" rel="noopener">descarga mi cv</a>
-          </article>
-          <img src="../assets/James.jpg" alt="jhonjamesbedoya" id="photo-james" />
-          <article>
-            <h4>Mis habilidades</h4>
-            <div class="skills">
-              <ul>
-                <li>html</li>
-                <li>css</li>
-                <li>javascript</li>
-                <li>vue.js</li>
-                <li>Bootstrap</li>
-              </ul>
-            </div>
-          </article>
+    <section class="portfolio" id="portafolio">
+      <h2 class="portfolio__title">Mis Proyectos</h2>
+      <div class="portfolio__container">
+
+        <div>
+          <a href="#trabajo-1" class="portfolio__card">
+            <img src="../assets/portfolio-1.jpg" alt="">
+          </a>
         </div>
-      </section>
 
-      <section class="portfolio" id="portafolio">
-        <h2>Mis Proyectos</h2>
-        <div class="portfolio__container">
-          <div><img src="../assets/portfolio-1.jpg" alt=""></div>
-          <div><img src="../assets/portfolio-2.jpg" alt=""></div>
-          <div><img src="../assets/portfolio-3.jpg" alt=""></div>
-          <div><img src="../assets/portfolio-4.jpg" alt=""></div>
-          <div><img src="../assets/portfolio-5.jpg" alt=""></div>
-          <div><img src="../assets/portfolio-6.jpg" alt=""></div>
+        <div>
+          <a href="#trabajo-2" class="portfolio__card">
+            <img src="../assets/portfolio-2.png" alt="">
+          </a>
         </div>
-      </section>
 
-      <section class="testimonials" id="testimonios">
-        <h2>testimonios</h2>
-      </section>
+        <div>
+          <a href="#trabajo-3" class="portfolio__card">
+            <img src="../assets/portfolio-3.png" alt="">
+          </a>
+        </div>
 
-      <section class="contact" id="contacto">
-        <h2>Contacto</h2>
+        <div>
+          <a href="#trabajo-4" class="portfolio__card">
+            <img src="../assets/portfolio-4.jpg" alt="">
+          </a>
+        </div>
+
+        <div>
+          <a href="#trabajo-5" class="portfolio__card">
+            <img src="../assets/portfolio-5.jpg" alt="">
+          </a>
+        </div>
+
+        <div>
+          <a href="#trabajo-6" class="portfolio__card">
+            <img src="../assets/portfolio-6.jpg" alt="">
+          </a>
+        </div>
+      </div>
+      <section>
+
+        <article class="modal" id="trabajo-1">
+          <div class="modal__content">
+            <a href="#close" class="modal__close">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path
+                  d="M12,2C6.486,2,2,6.486,2,12s4.486,10,10,10s10-4.486,10-10S17.514,2,12,2z M16.207,14.793l-1.414,1.414L12,13.414 l-2.793,2.793l-1.414-1.414L10.586,12L7.793,9.207l1.414-1.414L12,10.586l2.793-2.793l1.414,1.414L13.414,12L16.207,14.793z" />
+              </svg>
+            </a>
+            <article class="portafolio-modal">
+              <img src="../assets/portfolio-1.jpg" alt="">
+              <div class="portfolio-info">
+                <h3>Nombre del proyecto 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto autem tenetur, numquam, officiis
+                  amet voluptates in similique earum blanditiis ut aut veritatis excepturi saepe atque deserunt
+                  consectetur sunt ipsum odio?</p>
+                <aside class="porfolio-details">
+                  <small><b>Cliente</b></small>
+                  <small>Nombre del cliente</small>
+                  <small><b>Fecha</b></small>
+                  <small>24/10/2021</small>
+                  <small><b>Tipo</b></small>
+                  <small>Tipo de proyecto</small>
+                  <small><b>Enlace</b></small>
+                  <small><a href="https//:" target="_blank" rel="noopener">enlace al proyecto</a> </small>
+                </aside>
+              </div>
+            </article>
+          </div>
+        </article>
+
+
+        <article class="modal" id="trabajo-2">
+          <div class="modal__content">
+            <a href="#close" class="modal__close">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path
+                  d="M12,2C6.486,2,2,6.486,2,12s4.486,10,10,10s10-4.486,10-10S17.514,2,12,2z M16.207,14.793l-1.414,1.414L12,13.414 l-2.793,2.793l-1.414-1.414L10.586,12L7.793,9.207l1.414-1.414L12,10.586l2.793-2.793l1.414,1.414L13.414,12L16.207,14.793z" />
+              </svg>
+            </a>
+            <article class="portafolio-modal">
+              <img src="../assets/portfolio-2.png" alt="">
+              <div class="portfolio-info">
+                <h3>Nombre del proyecto 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto autem tenetur, numquam, officiis
+                  amet voluptates in similique earum blanditiis ut aut veritatis excepturi saepe atque deserunt
+                  consectetur sunt ipsum odio?</p>
+                <aside class="porfolio-details">
+                  <small><b>Cliente</b></small>
+                  <small>Nombre del cliente</small>
+                  <small><b>Fecha</b></small>
+                  <small>24/10/2021</small>
+                  <small><b>Tipo</b></small>
+                  <small>Tipo de proyecto</small>
+                  <small><b>Enlace</b></small>
+                  <small><a href="https//:" target="_blank" rel="noopener">enlace al proyecto</a> </small>
+                </aside>
+              </div>
+            </article>
+          </div>
+        </article>
+
+
+        <article class="modal" id="trabajo-3">
+          <div class="modal__content">
+            <a href="#close" class="modal__close">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path
+                  d="M12,2C6.486,2,2,6.486,2,12s4.486,10,10,10s10-4.486,10-10S17.514,2,12,2z M16.207,14.793l-1.414,1.414L12,13.414 l-2.793,2.793l-1.414-1.414L10.586,12L7.793,9.207l1.414-1.414L12,10.586l2.793-2.793l1.414,1.414L13.414,12L16.207,14.793z" />
+              </svg>
+            </a>
+            <article class="portafolio-modal">
+              <img src="../assets/portfolio-3.png" alt="">
+              <div class="portfolio-info">
+                <h3>Nombre del proyecto 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto autem tenetur, numquam, officiis
+                  amet voluptates in similique earum blanditiis ut aut veritatis excepturi saepe atque deserunt
+                  consectetur sunt ipsum odio?</p>
+                <aside class="porfolio-details">
+                  <small><b>Cliente</b></small>
+                  <small>Nombre del cliente</small>
+                  <small><b>Fecha</b></small>
+                  <small>24/10/2021</small>
+                  <small><b>Tipo</b></small>
+                  <small>Tipo de proyecto</small>
+                  <small><b>Enlace</b></small>
+                  <small><a href="https//:" target="_blank" rel="noopener">enlace al proyecto</a> </small>
+                </aside>
+              </div>
+            </article>
+          </div>
+        </article>
+
+        <article class="modal" id="trabajo-4">
+          <div class="modal__content">
+            <a href="#close" class="modal__close">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path
+                  d="M12,2C6.486,2,2,6.486,2,12s4.486,10,10,10s10-4.486,10-10S17.514,2,12,2z M16.207,14.793l-1.414,1.414L12,13.414 l-2.793,2.793l-1.414-1.414L10.586,12L7.793,9.207l1.414-1.414L12,10.586l2.793-2.793l1.414,1.414L13.414,12L16.207,14.793z" />
+              </svg>
+            </a>
+            <article class="portafolio-modal">
+              <img src="../assets/portfolio-4.jpg" alt="">
+              <div class="portfolio-info">
+                <h3>Nombre del proyecto 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto autem tenetur, numquam, officiis
+                  amet voluptates in similique earum blanditiis ut aut veritatis excepturi saepe atque deserunt
+                  consectetur sunt ipsum odio?</p>
+                <aside class="porfolio-details">
+                  <small><b>Cliente</b></small>
+                  <small>Nombre del cliente</small>
+                  <small><b>Fecha</b></small>
+                  <small>24/10/2021</small>
+                  <small><b>Tipo</b></small>
+                  <small>Tipo de proyecto</small>
+                  <small><b>Enlace</b></small>
+                  <small><a href="https//:" target="_blank" rel="noopener">enlace al proyecto</a> </small>
+                </aside>
+              </div>
+            </article>
+          </div>
+        </article>
+
+
+        <article class="modal" id="trabajo-5">
+          <div class="modal__content">
+            <a href="#close" class="modal__close">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path
+                  d="M12,2C6.486,2,2,6.486,2,12s4.486,10,10,10s10-4.486,10-10S17.514,2,12,2z M16.207,14.793l-1.414,1.414L12,13.414 l-2.793,2.793l-1.414-1.414L10.586,12L7.793,9.207l1.414-1.414L12,10.586l2.793-2.793l1.414,1.414L13.414,12L16.207,14.793z" />
+              </svg>
+            </a>
+            <article class="portafolio-modal">
+              <img src="../assets/portfolio-5.jpg" alt="">
+              <div class="portfolio-info">
+                <h3>Nombre del proyecto 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto autem tenetur, numquam, officiis
+                  amet voluptates in similique earum blanditiis ut aut veritatis excepturi saepe atque deserunt
+                  consectetur sunt ipsum odio?</p>
+                <aside class="porfolio-details">
+                  <small><b>Cliente</b></small>
+                  <small>Nombre del cliente</small>
+                  <small><b>Fecha</b></small>
+                  <small>24/10/2021</small>
+                  <small><b>Tipo</b></small>
+                  <small>Tipo de proyecto</small>
+                  <small><b>Enlace</b></small>
+                  <small><a href="https//:" target="_blank" rel="noopener">enlace al proyecto</a> </small>
+                </aside>
+              </div>
+            </article>
+          </div>
+        </article>
+
+
+        <article class="modal" id="trabajo-6">
+          <div class="modal__content">
+            <a href="#close" class="modal__close">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path
+                  d="M12,2C6.486,2,2,6.486,2,12s4.486,10,10,10s10-4.486,10-10S17.514,2,12,2z M16.207,14.793l-1.414,1.414L12,13.414 l-2.793,2.793l-1.414-1.414L10.586,12L7.793,9.207l1.414-1.414L12,10.586l2.793-2.793l1.414,1.414L13.414,12L16.207,14.793z" />
+              </svg>
+            </a>
+            <article class="portafolio-modal">
+              <img src="../assets/portfolio-6.jpg" alt="">
+              <div class="portfolio-info">
+                <h3>Nombre del proyecto 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto autem tenetur, numquam, officiis
+                  amet voluptates in similique earum blanditiis ut aut veritatis excepturi saepe atque deserunt
+                  consectetur sunt ipsum odio?</p>
+                <aside class="porfolio-details">
+                  <small><b>Cliente</b></small>
+                  <small>Nombre del cliente</small>
+                  <small><b>Fecha</b></small>
+                  <small>24/10/2021</small>
+                  <small><b>Tipo</b></small>
+                  <small>Tipo de proyecto</small>
+                  <small><b>Enlace</b></small>
+                  <small><a href="https//:" target="_blank" rel="noopener">enlace al proyecto</a> </small>
+                </aside>
+              </div>
+            </article>
+          </div>
+        </article>
+
       </section>
-    </main>
-    <footer class="footer hiden">
-      <small
-        >Sitio diseñado por
-        <a
-          href="https://www.linkedin.com/in/jhonjamesbedoya/"
-          target="_blank"
-          rel="noopener"
-          >Jhon James</a
-        ></small
-      >
-    </footer>
-    <script src="app.js"></script>
-  </body>
+    </section>
+
+    <section class="testimonials" id="testimonios">
+      <h2>testimonios</h2>
+    </section>
+
+    <section class="contact" id="contacto">
+      <h2>Contacto</h2>
+    </section>
+  </main>
+  <footer class="footer hiden">
+    <small>Sitio diseñado por
+      <a href="https://www.linkedin.com/in/jhonjamesbedoya/" target="_blank" rel="noopener">Jhon James</a></small>
+  </footer>
+  <script src="app.js"></script>
+</body>
+
 </html>

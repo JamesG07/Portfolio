@@ -324,25 +324,82 @@ p {
 }
 
 .portfolio__container {
-    display: grid;
-    place-content: center;
     width: 94%;
     margin: 0 auto;
 }
 
-.portfolio__container img {
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-}
-
-.portfolio__container div {
-    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-}
-
-.portfolio h2 {
+.portfolio__title {
+    padding: .5rem;
+    margin: 0 auto 2rem auto;
+    width: 250px;
     text-align: center;
-    color: var(--text-color);
-    margin-bottom: 1rem;
-    font-size: 1.6rem;
+    border-top: thin solid var(--first-color);
+    border-bottom: thin solid var(--first-color);
+}
+
+.modal {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--black-alpha-color);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 1s;
+}
+
+.modal__content {
+    position: relative;
+}
+
+.modal__close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.modal__close svg {
+    width: 3rem;
+    height: 3rem;
+    fill: var(--first-color);
+}
+
+.modal[id|='trabajo']:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.portafolio-modal {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    max-width: 400px;
+    max-height: 800px;
+    background-color: var(--white-color);
+}
+
+.portafolio-modal h3 {
+    margin: 1rem auto;
+    padding: .5rem 0;
+    border-bottom: medium solid var(--first-color);
+    color: var(--title-color);
+}
+
+.portafolio-modal p {
+    font-size: 15px;
+}
+
+.portafolio__modal img {
+    width: 400px;
+}
+
+.porfolio-details {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-auto-rows: auto;
 }
