@@ -99,3 +99,14 @@
     height: 400px;
     margin-right: 1rem;
 }
+
+/* section contact */
+.contact .contact-cards {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.contact-form {
+    margin: 0 auto;
+}
+
+#gracias {}

@@ -110,6 +110,16 @@ p {
     text-transform: uppercase;
 }
 
+.avatar {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+}
+
+.text-first-color {
+    color: var(--first-color);
+}
+
 /* ******* Components ***** */
 /* btn hamburger */
 .menu-btn {
@@ -240,7 +250,7 @@ p {
 }
 
 .hero__opacity {
-    background-color: var(--black-alpha-color);
+    background-color: var(--hero-opcity);
     height: 100vh;
 }
 
@@ -351,6 +361,7 @@ p {
     opacity: 0;
     pointer-events: none;
     transition: all 1s;
+    height: 100vh;
 }
 
 .modal__content {
@@ -402,4 +413,228 @@ p {
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-auto-rows: auto;
+}
+
+.portfolio-info {
+    align-self: center;
+}
+
+/* section carousel  */
+
+@keyframes carousel-slide {
+    0% {
+        transform: translateX(0%);
+    }
+
+    25% {
+        transform: translateX(-25%);
+    }
+
+    50% {
+        transform: translateX(-50%);
+    }
+
+    75% {
+        transform: translateX(-75%);
+    }
+
+}
+
+.testimonials__container {
+    max-width: 1200px;
+}
+
+.testimonials {
+    margin: 3rem 0;
+}
+
+.carousel-title {
+    padding: .5rem;
+    margin: 0 auto 2rem auto;
+    width: 250px;
+    color: var(--title-color);
+    text-align: center;
+    border-top: thin solid var(--first-color);
+    border-bottom: thin solid var(--first-color);
+}
+
+
+.carousel {
+    display: grid;
+    place-content: center;
+    margin: 1rem auto;
+    padding: 2rem auto;
+    min-width: 800px;
+    height: 400px;
+    text-align: center;
+    background-color: var(--carousel-bg-color);
+    overflow-x: hidden;
+}
+
+.carousel .slides {
+    display: flex;
+    width: 400%;
+    transition: transform .5s ease-in-out;
+    animation: carousel-slide 12s ease-in-out 2s;
+
+}
+
+#slide-1:checked~.slides {
+    transform: translateX(0%);
+}
+
+#slide-2:checked~.slides {
+    transform: translateX(-25%);
+}
+
+#slide-3:checked~.slides {
+    transform: translateX(-50%);
+}
+
+#slide-4:checked~.slides {
+    transform: translateX(-75%);
+}
+
+#slide-1:checked~.slides-nav label#dot-1,
+#slide-2:checked~.slides-nav label#dot-2,
+#slide-3:checked~.slides-nav label#dot-3,
+#slide-4:checked~.slides-nav label#dot-4 {
+    background-color: var(--gray-dark-color);
+}
+
+.carousel input {
+    display: none;
+}
+
+.carousel label {
+    display: inline-block;
+    width: .75rem;
+    height: .75rem;
+    border: medium solid var(--gray-dark-color);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+blockquote {
+    color: var(--black-color);
+}
+
+
+/* section 4 contacto  */
+.contact {
+    width: 100%;
+}
+
+.contact__container {
+    width: 94%;
+    margin: 0 auto;
+}
+
+.contact__container h3 {
+    color: var(--title-color);
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.contact-card {
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.contact article {
+    margin: 2rem 0;
+}
+
+.contact article aside {
+    margin-bottom: 1rem;
+
+}
+
+.contact article aside h4 {
+    text-transform: uppercase;
+}
+
+.contact-card>svg {
+
+    width: 3rem;
+    height: 3rem;
+    fill: var(--first-color);
+}
+
+.contact-card>small {
+    margin-top: -1rem;
+}
+
+@media screen and (min-width:768px) {
+    .contact .contact-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+}
+
+/* formulario  */
+.contact-form {
+    margin: 1rem 0;
+    padding: 1rem;
+    max-width: 800px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    height: 390px;
+}
+
+.contact-form>* {
+    padding: .5rem;
+    margin: 1rem auto;
+    display: block;
+    width: 100%;
+}
+
+.contact-form input,
+.contact-form textarea {
+    font-size: .85rem;
+    font-family: var(--font);
+}
+
+.contact-form textarea {
+    resize: none;
+}
+
+.contact-form input {
+    border: none;
+    border-bottom: thin solid var(--gray-dark-color);
+}
+
+.contact-form .button {
+    width: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+.modal#gracias:target {
+    opacity: 1;
+    pointer-events: 0;
+}
+
+.contact-form-loader {
+    text-align: center;
+}
+
+.contact-form-response {
+    padding: 1rem;
+    width: 400px;
+    text-align: center;
+    background-color: var(--white-color);
+    margin: 0 auto;
+}
+
+.contact-form-response>svg {
+    margin-top: 2rem;
+    width: 4rem;
+    height: 4rem;
+    fill: var(--first-color);
 }
