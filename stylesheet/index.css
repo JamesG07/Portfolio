@@ -413,6 +413,15 @@ p {
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-auto-rows: auto;
+    gap: 1rem;
+}
+
+
+.porfolio-details a {
+    color: rebeccapurple;
+    border: thin solid rgba(0, 0, 0, 0.459);
+    padding: .5rem;
+    border-radius: 20px;
 }
 
 .portfolio-info {
